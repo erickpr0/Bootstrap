@@ -148,7 +148,7 @@
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                        <a href="#loginModal"><span class="fa fa-sign-in fa-fw" id="login">Login</span></a>
+                        <a id="loginButton"><span class="fa fa-sign-in fa-fw" id="login">Login</span></a>
                 </span>
             </div>
         </div>
@@ -337,9 +337,10 @@
                 $('#reserveTable').modal();
             });
 
-            $('a[href$="#loginModal"]').on( "click", function() {
-                $('#loginModal').modal('show');
+            $('#loginButton').click(function(){
+                $('#loginModal').modal();
             });
+
         });
      </script>
 
